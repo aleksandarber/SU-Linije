@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Lanes.Lane_8_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linija 8"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Notes -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/directionExplenation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:background="@drawable/layout_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:text="Odlazak:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="  Ž.Naselje -> Lifka -> Aleksandrovo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:text="Povratak:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="  Aleksandrovo -> Lifka -> Ž.Naselje"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:text="Skracenice:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="  Ta - Tatravagonke"/>
+
+        </LinearLayout>
+
+        <!-- Tabel -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+
+            <!-- Table Foreheading -->
+            <TableRow
+                android:background="@drawable/topleft_table">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="ODLAZAK"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="POVRATAK"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+
+            </TableRow>
+
+            <!-- Table Heading -->
+            <TableRow
+                android:background="@color/softDarkBlue">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/rad"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/vip"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/vip"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/rad"
+                    android:gravity="center"/>
+
+
+
+            </TableRow>
+
+            <!-- Table Data -->
+
+            <TableRow style="@style/RowBg"
+                android:layout_marginTop="5dp">
+                <TextView android:id="@+id/OR1" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/OV1" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/PV1" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/PR1" style="@style/TextView_Tables"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:id="@+id/OR2" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/OV2" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/PV2" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/PR2" style="@style/TextView_Tables"/>
+            </TableRow>
+            <TableRow style="@style/RowBg">
+                <TextView android:id="@+id/OR3" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/OV3" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/PV3" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/PR3" style="@style/TextView_Tables"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:id="@+id/OR4" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/OV4" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/PV4" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/PR4" style="@style/TextView_Tables"/>
+            </TableRow>
+            <TableRow style="@style/RowBg">
+                <TextView android:id="@+id/OR5" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/OV5" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/PV5" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/PR5" style="@style/TextView_Tables"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:id="@+id/OR6" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/OV6" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/PV6" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/PR6" style="@style/TextView_Tables"/>
+            </TableRow>
+            <TableRow style="@style/RowBg">
+                <TextView android:id="@+id/OR7" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/OV7" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/PV7" style="@style/TextView_Tables"/>
+                <TextView android:id="@+id/PR7" style="@style/TextView_Tables"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>

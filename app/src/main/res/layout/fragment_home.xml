@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".fragments.HomeFragment">
+
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gradske linije"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <!-- Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/lightGray"
+            android:layout_marginTop="7dp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <!-- Row1 -->
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="7dp">
+
+                <Button
+                    android:id="@+id/Lane1A"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="BtnClick"
+                    android:backgroundTint="@color/softDarkBlue"
+                    android:textColor="@color/white"
+                    android:text="1A"
+                    android:textSize="40dp"
+                    android:background="@drawable/home_btn"/>
+
+                <TextView
+                    android:id="@+id/lane1a_text"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:translationY="48dp"
+                    android:translationZ="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="Kelebija Opština - Jadran Bolnica - Novo Naselje"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="7dp">
+
+                <Button
+                    android:id="@+id/Lane2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="BtnClick"
+                    android:backgroundTint="@color/softDarkBlue"
+                    android:textColor="@color/white"
+                    android:text="2"
+                    android:textSize="40dp"
+                    android:background="@drawable/home_btn"/>
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:translationY="45dp"
+                    android:translationZ="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="Srpski šor - Pačirski put"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!-- Row2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="7dp">
+
+                <Button
+                    android:id="@+id/Lane3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="BtnClick"
+                    android:backgroundTint="@color/softDarkBlue"
+                    android:textColor="@color/white"
+                    android:text="3"
+                    android:textSize="40dp"
+                    android:background="@drawable/home_btn"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:translationY="45dp"
+                    android:translationZ="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="Makova sedmica - Lifka - Bajski put"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="7dp">
+
+                <Button
+                    android:id="@+id/Lane4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="BtnClick"
+                    android:backgroundTint="@color/softDarkBlue"
+                    android:textColor="@color/white"
+                    android:text="4"
+                    android:textSize="40dp"
+                    android:background="@drawable/home_btn"/>
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:translationY="45dp"
+                    android:translationZ="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="V. Radanovac - Lifka"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!-- Row3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="7dp">
+
+                <Button
+                    android:id="@+id/Lane6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="BtnClick"
+                    android:backgroundTint="@color/softDarkBlue"
+                    android:textColor="@color/white"
+                    android:text="6"
+                    android:textSize="40dp"
+                    android:background="@drawable/home_btn"/>
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:translationY="45dp"
+                    android:translationZ="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="Mali Bajmok - Palić - Vikend naselje"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="7dp">
+
+                <Button
+                    android:id="@+id/Lane7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="BtnClick"
+                    android:backgroundTint="@color/softDarkBlue"
+                    android:textColor="@color/white"
+                    android:text="7"
+                    android:textSize="40dp"
+                    android:background="@drawable/home_btn"/>
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:translationY="45dp"
+                    android:translationZ="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="Lifka - Vikend naselje (noćna linija)"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!-- Row4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="7dp">
+
+                <Button
+                    android:id="@+id/Lane8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="BtnClick"
+                    android:backgroundTint="@color/softDarkBlue"
+                    android:textColor="@color/white"
+                    android:text="8"
+                    android:textSize="40dp"
+                    android:background="@drawable/home_btn"/>
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:translationY="45dp"
+                    android:translationZ="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="Ž.Naselje - Lifka - Aleksandrovo"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="7dp">
+
+                <Button
+                    android:id="@+id/Lane8A"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="BtnClick"
+                    android:backgroundTint="@color/softDarkBlue"
+                    android:textColor="@color/white"
+                    android:text="8A"
+                    android:textSize="40dp"
+                    android:background="@drawable/home_btn"/>
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:translationY="45dp"
+                    android:translationZ="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="Lifka - Jadran - Železničko Naselje"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!-- Row5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="7dp">
+
+                <Button
+                    android:id="@+id/Lane9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="BtnClick"
+                    android:backgroundTint="@color/softDarkBlue"
+                    android:textColor="@color/white"
+                    android:text="9"
+                    android:textSize="40dp"
+                    android:background="@drawable/home_btn" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:translationY="48dp"
+                    android:translationZ="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="Srpski šor - Hala sportova - Sutrans - Sever"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="7dp">
+
+                <Button
+                    android:id="@+id/Lane10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="BtnClick"
+                    android:backgroundTint="@color/softDarkBlue"
+                    android:textColor="@color/white"
+                    android:text="10"
+                    android:textSize="40dp"
+                    android:background="@drawable/home_btn"/>
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:translationY="45dp"
+                    android:translationZ="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="Palić (naselje) - Radanovac - Lifka"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!--Row 5-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="7dp">
+
+                <Button
+                    android:id="@+id/Lane16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="BtnClick"
+                    android:backgroundTint="@color/softDarkBlue"
+                    android:textColor="@color/white"
+                    android:text="16"
+                    android:textSize="40dp"
+                    android:background="@drawable/home_btn"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:translationY="45dp"
+                    android:translationZ="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="Teslino naselje - Bolnica - Aleksandrovo"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_margin="7dp">
+
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

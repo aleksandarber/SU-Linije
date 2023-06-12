@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SU Linije</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="vip">Vikend i praznici</string>
+    <string name="rad">Radni dani</string>
+    <string name="time"></string>
+    <string name="About">
+        Ovu aplikciju je napravio Aleksandar Berkes ucenik Tehnicke Skole "Ivan Saric" iz 3ITS razreda. Na aplikaciji SU Linije mozemo kroz jednostavan dizajn koji je brz i lak za koriscenje da proveravamo vremena svih linija koje vrse transport putnika u Subotici. Ideju da napravim aplikaciju SU Linije sam dobio nakon sto sam jednoga dana zakasnio na autobus zato sto nisam imao interneta da proverim vreme na sajtu. Tada sam se zapitao zasto ne postoji neka aplikacija na kojoj bi ljudi bez interneta mogli da vide sva vremena odlaska i polaska autobusa svih linija na jednom mestu pa sam se odlucio da pokusam da napravim tako nesto.
+    </string>
+
+    <string-array name="linije">
+        <item>Linija 1A</item>
+        <item>Linija 2</item>
+        <item>Linija 3</item>
+        <item>Linija 6</item>
+        <item>Linija 8</item>
+        <item>Linija 16</item>
+    </string-array>
+
+    <string name="lane_dropdown">lane_dropdown</string>
+
+    <string name="API_KEY">AIzaSyCNCtGxLB4BxSgh5nZcyFcI50YheRAlHVE</string>
+
+</resources>

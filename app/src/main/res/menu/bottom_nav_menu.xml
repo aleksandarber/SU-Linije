@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="Linije"
+        android:icon="@drawable/baseline_directions_bus_24"/>
+
+    <item android:id="@+id/mapMenu"
+        android:title="Mapa"
+        android:icon="@drawable/baseline_map_24"/>
+
+    <item android:id="@+id/settings"
+        android:title="O aplikaciji"
+        android:icon="@drawable/baseline_attribution_24"/>
+
+</menu>
